@@ -1,0 +1,10 @@
+.active{
+    font-size: 19px;
+    padding-left: 45px;
+}
+.disable {
+    text-decoration: line-through;
+    font-size: 19px;
+    color: #504f4f;
+    padding-left: 45px;
+}

@@ -1,0 +1,180 @@
+*{ 
+  box-sizing: border-box;
+}
+h1{
+  padding: 50px !important
+}
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/mccain-fries-and-appetizers.jpg);
+  background-repeat:  no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 64px;
+  margin: 0px;
+  padding: 110px 0px 15px 0px;
+}
+a{
+  text-decoration: none;
+}
+button{
+  outline: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* dish-link on main*/
+.dish-link{
+  max-width: 800px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dish-link a, .final-wrapper{
+  font-size: 25px;
+  padding: 15px 10px;
+  color: #2f4803;
+  background-color: #f7f3f3;
+  border: 1px solid #ccc;
+  margin: 0px 10px;
+}
+
+/* dish checkbox */
+.IngredientsList{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  max-width: 800px;
+  padding: 25px 0px;
+}
+.container{
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-bottom: 25px;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+.container:hover input ~ .checkMark {
+  background-color: #ddf3b6;
+}
+.container input:checked ~ .checkMark {
+  background-color: #8fcc24;
+}
+.checkMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkMark:after {
+  display: block;
+}
+.container .checkMark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* button style */
+button{
+  outline: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.btn{
+  text-align: center;
+  padding: 15px 35px;;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #5d8d07;
+  cursor: pointer;
+}
+
+/* menu images */
+.dish-icon{
+  height: 275px;
+  width: 400px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.dish-icon img {
+  height: 100%;
+  width: 400px;
+ }
