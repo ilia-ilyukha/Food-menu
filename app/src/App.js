@@ -8,7 +8,6 @@ import history from "./history";
 
 class App extends React.Component { 
   render() {
-    console.log(this.props.userDish);
     return (
       <div className="App">
         <Router history={history}>
@@ -17,7 +16,6 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route path="/Dish/:id" component={Dish} />
             <Route path="/ThankYou/" component={ThankYouPage} />
-      }
           </Switch>
         </Router>
       </div>
