@@ -8,7 +8,7 @@ class Dish extends React.Component {
     id = this.props.match.params.id;
     state = {
         name: this.props.dishes[this.id].name,
-        ingredients: this.props.dishes[this.id].ingredientsList[0],
+        ingredients: this.props.dishes[this.id].ingredientsList,
         img: this.props.dishes[this.id].img
     }
 
@@ -75,4 +75,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dish);
-// export default Dish;

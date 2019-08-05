@@ -11,19 +11,4 @@ class Home extends React.Component {
         );
     }
 }
-
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         fetchData: () => dispatch(fetchData()),
-
-//     };
-// };
-
-// const mapStateToProps = state => {
-//     return {
-//         value: state.postReducer.value
-//     };
-// };
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Home);
 export default Home;
